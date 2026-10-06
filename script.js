@@ -13,9 +13,22 @@ function renderTasks(filter = "") {
     .forEach(t => {
       const card = document.createElement("div");
       card.className = "task-card";
-      card.innerHTML = "<h3></h3><p></p>";
-      card.querySelector("h3").textContent = t.title;
-      card.querySelector("p").textContent = t.description;
+      card.classList.toggle("is-completed", t.completed);
+
+      const title = document.createElement("h3");
+      title.textContent = t.title;
+      const description = document.createElement("p");
+      description.textContent = t.description;
+      const completionButton = document.createElement("button");
+      completionButton.type = "button";
+      completionButton.textContent = t.completed ? "Mark pending" : "Complete";
+      completionButton.setAttribute("aria-pressed", String(t.completed));
+      completionButton.addEventListener("click", () => {
+        t.completed = !t.completed;
+        renderTasks(searchBox.value);
+      });
+
+      card.append(title, description, completionButton);
       taskList.appendChild(card);
     });
 }
@@ -23,7 +36,7 @@ function renderTasks(filter = "") {
 addButton.addEventListener("click", () => {
   const title = titleInput.value.trim();
   if (!title) return;
-  tasks.push({ title, description: descInput.value.trim() });
+  tasks.push({ title, description: descInput.value.trim(), completed: false });
   titleInput.value = "";
   descInput.value = "";
   renderTasks(searchBox.value);
