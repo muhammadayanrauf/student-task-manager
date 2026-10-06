@@ -33,8 +33,15 @@ button:hover { background: #1a5fc0; }
   margin-top: 12px;
   border-radius: 8px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  overflow-wrap: anywhere;
 }
 .task-card h3 { margin: 0 0 6px; }
+.task-card.is-completed { background: #e8f2ec; }
+.task-card.is-completed h3,
+.task-card.is-completed p {
+  color: #52645a;
+  text-decoration: line-through;
+}
 @media (max-width: 480px) {
   body { padding: 12px; }
   button { width: 100%; }
