@@ -86,41 +86,41 @@ Features were linked to GitHub Issues with `Closes #1` in the Pull Request descr
 
 **Figure 1.2: Git Configuration**
 
-![Figure 1.2: Git Configuration (Ayan)](screenshots/ss01.png)
+![Figure 1.2: Git Configuration (Ayan)](screenshots/ss1.png)
 
 **Figure 2: Initial Project**
 
-![Figure 2: Initial Project](screenshots/ss02.png)
+![Figure 2: Initial Project](screenshots/ss2.png)
 
 **Figure 3: Git Initialization**
 
-![Figure 3: Git Initialization](screenshots/ss03.png)
+![Figure 3: Git Initialization](screenshots/ss3.png)
 
 **Figure 4: Staging Area**
 
-![Figure 4: Staging Area](screenshots/ss04.png)
+![Figure 4: Staging Area](screenshots/ss4.png)
 
 **Figure 5: First Commit**
 
-![Figure 5: First Commit](screenshots/ss05.png)
+![Figure 5: First Commit](screenshots/ss5.png)
 
 **Figure 6: Git History**
 
-![Figure 6: Git History](screenshots/ss06.png)
+![Figure 6: Git History](screenshots/ss6.png)
 
 ### GitHub and branching
 
 **Figure 7: GitHub Repository**
 
-![Figure 7: GitHub Repository](screenshots/ss07.png)
+![Figure 7: GitHub Repository](screenshots/ss7.png)
 
 **Figure 8: First GitHub Push**
 
-![Figure 8: First GitHub Push](screenshots/ss08.png)
+![Figure 8: First GitHub Push](screenshots/ss8.png)
 
 **Figure 9: Feature Branch**
 
-![Figure 9: Feature Branch](screenshots/ss09.png)
+![Figure 9: Feature Branch](screenshots/ss9.png)
 
 **Figure 10: Git Diff**
 
